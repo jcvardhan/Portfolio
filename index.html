@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Vardhan - Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section id="landing-page">
+        <div class="landing-content">
+            <h1 class="landing-title">Chaitanya Vardhan</h1>
+            <p class="landing-tagline">Innovating at the crossroads of hardware and intelligence.
+Turning imagination into systems that think, sense, and evolve...</p>
+        </div>
+        <div class="scroll-prompt">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo" aria-label="Chaitanya - Home">CHAITANYA</a>
+
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <ul class="nav-desktop-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#internships" class="nav-link">Internships</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+        <ul class="nav-mobile-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#internships" class="nav-link">Internships</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Chaitanya<br>Vardhan</h1>
+                    <p class="hero-tagline">Building Intelligent Systems That Bridge Hardware and AI</p>
+                    
+                    <a href="./resume.pdf" class="btn" download="Chaitanya_Vardhan_Resume.pdf">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.5rem; color: var(--text-light);">
+                    I am an Electronics and Communication Engineering student at SRMIST, passionate about the intersection of
+                    hardware and software. My focus is on IoT, AI, and embedded systems. I thrive on building tangible
+                    solutions, from voice assistants and gesture-controlled PCs to smart monitoring systems.
+                    I'm driven by curiosity and a hands-on approach to turn complex ideas into reality.
+                </p>
+                </div>
+        </section>
+
+        <section class="education" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Education</h2>
+                </div>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" id="education-carousel" data-timeline="education-timeline">
+                        </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn" aria-label="Previous education item">&lt;</button>
+                        <button class="carousel-btn next-btn" aria-label="Next education item">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="timeline-container" id="education-timeline">
+                    <div class="timeline-line">
+                        <div class="timeline-progress"></div>
+                    </div>
+                    <div class="timeline-dots">
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="internships" id="internships">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Internships</h2>
+                </div>
+                <div class="internships-grid" id="internships-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                </div>
+                <div id="projects-container">
+                    </div>
+            </div>
+        </section>
+
+        <section class="hackathons" id="hackathons">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hackathons</h2>
+                </div>
+                <div class="hackathons-grid" id="hackathons-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid" id="skills-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="certifications" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                </div>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" id="certifications-carousel">
+                        </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn" aria-label="Previous certification item">&lt;</button>
+                        <button class="carousel-btn next-btn" aria-label="Next certification item">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="hobbies" id="hobbies" aria-label="My Hobbies">
+            <div class="hobbies-wrapper">
+                <div class="hobbies-track" id="hobbies-track">
+                    </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            I'm always open to discussing new projects, creative ideas, or opportunities
+                            to be part of your visions.
+                        </p>
+                        <ul class="contact-links">
+                            <li>Email: <a href="mailto:jc0589@srmist.edu.in">jc0589@srmist.edu.in</a></li>
+                            <li>LinkedIn: <a href="https://linkedin.com/in/your-profile-url" target="_blank" rel="noopener noreferrer">Chaitanya Vardhan</a></li>
+                            </ul>
+                    </div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <span class="error-message">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <span class="error-message">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            <span class="error-message">Please enter a message.</span>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Chaitanya Vardhan | All Rights Reserved</p>
+            <p>Built with HTML · CSS · JavaScript · VT323</p>
+        </div>
+    </footer>
+    
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container" id="modal-container">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                </div>
+        </div>
+    </div>
+    
+    <div class="modal-overlay friday-modal" id="friday-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="friday-modal-close-btn" aria-label="Close F.R.I.D.A.Y. demo">&times;</button>
+            <div class="modal-header">
+                <h2>F.R.I.D.A.Y.</h2>
+                <p>Demo Assistant Interface</p>
+            </div>
+            <div class="modal-body">
+                <div class="friday-modal-ui" aria-label="Demo voice waveform">
+                    [ Demo UI - Listening... ]
+                </div>
+                <p>Sample Phrases:</p>
+                <div class="friday-modal-buttons">
+                    <button class="btn" disabled>Demo: "Launch App"</button>
+                    <button class="btn" disabled>Demo: "Control Volume"</button>
+                    <button class="btn" disabled>Demo: "System Status"</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        Message sent successfully!
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
