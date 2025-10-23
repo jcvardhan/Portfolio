@@ -33,7 +33,7 @@ window.portfolioData = {
             school: "SRM Institute of Science and Technology",
             degree: "B.Tech ECE",
             year: "2023-Present",
-            grade: "CGPA: [9.0]" // <-- REPLACE THIS
+            grade: "CGPA: 9.0" // <-- REPLACE THIS
         }
     ],
     
