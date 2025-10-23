@@ -21,7 +21,7 @@ window.portfolioData = {
             school: "Sandur Residential School",
             degree: "Class 10 (ICSE)",
             year: "2021",
-            grade: "85%"
+            grade: "83%"
         },
         {
             school: "Sri Chaitanya College of Education",
@@ -33,7 +33,7 @@ window.portfolioData = {
             school: "SRM Institute of Science and Technology",
             degree: "B.Tech ECE",
             year: "2023-Present",
-            grade: "CGPA: [Your CGPA]" // <-- REPLACE THIS
+            grade: "CGPA: [9.0]" // <-- REPLACE THIS
         }
     ],
     
