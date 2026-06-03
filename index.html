@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaitanya Vardhan - Portfolio</title>
-    
+    <meta name="description" content="Chaitanya Vardhan — Electronics & Communication Engineer specializing in Embedded Systems, Industrial Automation, IoT, Android Development, AI, and Railway Signalling Research.">
+    <title>Chaitanya Vardhan | Engineering Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Background Canvas — grid lines & particles -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- Terminal Boot Loader Overlay -->
+    <div id="boot-overlay" role="dialog" aria-modal="true" aria-label="System Boot Sequence">
+        <div class="boot-terminal">
+            <div class="boot-text" id="boot-text"></div>
+            <div class="boot-progress-container">
+                <div class="boot-progress-bar" id="boot-progress-bar"></div>
+            </div>
+            <button class="btn boot-skip-btn" id="boot-skip-btn">SKIP BOOT</button>
+        </div>
+    </div>
+
+    <!-- ==================== LANDING PAGE ==================== -->
     <section id="landing-page">
         <div class="landing-content">
             <h1 class="landing-title">Chaitanya Vardhan</h1>
-            <p class="landing-tagline">Innovating the crossroads of hardware and intelligence.
-Turning imagination into systems that think, sense, and evolve...</p>
+            <p class="landing-tagline">Innovating the crossroads of hardware and intelligence.<br>Turning imagination into systems that think, sense, and evolve...</p>
         </div>
         <div class="scroll-prompt">
             <span>Scroll Down</span>
@@ -26,6 +40,7 @@ Turning imagination into systems that think, sense, and evolve...</p>
         </div>
     </section>
 
+    <!-- ==================== HEADER ==================== -->
     <header class="header" id="header">
         <div class="header-container">
             <a href="#home" class="logo" aria-label="Chaitanya - Home">CHAITANYA</a>
@@ -35,9 +50,10 @@ Turning imagination into systems that think, sense, and evolve...</p>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#internships" class="nav-link">Internships</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -59,22 +75,27 @@ Turning imagination into systems that think, sense, and evolve...</p>
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#internships" class="nav-link">Internships</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#certifications" class="nav-link">Certifications</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main id="main-content">
+
+        <!-- HERO -->
         <section class="hero" id="home">
             <div class="container hero-content">
                 <div class="hero-text">
                     <h1>Chaitanya<br>Vardhan</h1>
-                    <p class="hero-tagline">Building Intelligent Systems That Bridge Hardware and AI</p>
-                    
+                    <p class="hero-tagline">
+                        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </p>
                     <a href="./resume.pdf" class="btn" download="Chaitanya_Vardhan_Resume.pdf">
                         Download Resume
                     </a>
@@ -82,29 +103,41 @@ Turning imagination into systems that think, sense, and evolve...</p>
             </div>
         </section>
 
+        <!-- METRICS PANEL -->
+        <section class="metrics" id="metrics">
+            <div class="container">
+                <div class="metrics-grid" id="metrics-grid">
+                    <!-- JS renders metric cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
         <section class="about" id="about">
             <div class="container">
                 <div class="section-header">
                     <h2>About Me</h2>
                 </div>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.5rem; color: var(--text-light);">
+                <p class="about-text">
                     I am an Electronics and Communication Engineering student at SRMIST, passionate about the intersection of
-                    hardware and software. My focus is on IoT, AI, and embedded systems. I thrive on building tangible
-                    solutions, from voice assistants and gesture-controlled PCs to smart monitoring systems.
-                    I'm driven by curiosity and a hands-on approach to turn complex ideas into reality.
+                    hardware and software. I specialize in Embedded Systems, Industrial Automation, IoT, and Android Development,
+                    with active research in Railway Signalling Systems. From building Bluetooth communication platforms and
+                    gesture-controlled systems to working on industrial PLC/DCS automation and high-speed railway axle counters,
+                    I turn complex engineering challenges into tangible, working solutions.
                 </p>
-                </div>
+            </div>
         </section>
 
+        <!-- EDUCATION -->
         <section class="education" id="education">
             <div class="container">
                 <div class="section-header">
                     <h2>Education</h2>
                 </div>
-                
+
                 <div class="carousel-wrapper">
                     <div class="carousel-container" id="education-carousel" data-timeline="education-timeline">
-                        </div>
+                    </div>
                     <div class="carousel-controls">
                         <button class="carousel-btn prev-btn" aria-label="Previous education item">&lt;</button>
                         <button class="carousel-btn next-btn" aria-label="Next education item">&gt;</button>
@@ -116,61 +149,94 @@ Turning imagination into systems that think, sense, and evolve...</p>
                         <div class="timeline-progress"></div>
                     </div>
                     <div class="timeline-dots">
-                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="internships" id="internships">
+        <!-- EXPERIENCE TIMELINE -->
+        <section class="experience" id="experience">
             <div class="container">
                 <div class="section-header">
-                    <h2>Internships</h2>
+                    <h2>Experience</h2>
                 </div>
-                <div class="internships-grid" id="internships-grid">
-                    </div>
+                <div class="experience-timeline" id="experience-timeline">
+                    <!-- JS renders timeline entries -->
+                </div>
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section class="projects" id="projects">
             <div class="container">
                 <div class="section-header">
                     <h2>Projects</h2>
                 </div>
-                <div id="projects-container">
-                    </div>
+                <div class="project-filters" id="project-filters">
+                    <!-- JS renders filter buttons -->
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- JS renders project cards -->
+                </div>
             </div>
         </section>
 
+        <!-- HACKATHONS -->
         <section class="hackathons" id="hackathons">
             <div class="container">
                 <div class="section-header">
                     <h2>Hackathons</h2>
                 </div>
                 <div class="hackathons-grid" id="hackathons-grid">
-                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- ACHIEVEMENTS -->
+        <section class="achievements" id="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Achievements</h2>
+                </div>
+                <div class="achievements-grid" id="achievements-grid">
+                    <!-- JS renders achievement cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
         <section class="skills" id="skills">
             <div class="container">
                 <div class="section-header">
                     <h2>Skills</h2>
                 </div>
                 <div class="skills-grid" id="skills-grid">
-                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- TECHNOLOGY CLOUD -->
+        <section class="tech-cloud-section" id="tech-cloud">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technologies</h2>
+                </div>
+                <div class="tech-cloud-container" id="tech-cloud-container">
+                    <!-- JS renders floating tech tags -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
         <section class="certifications" id="certifications">
             <div class="container">
                 <div class="section-header">
                     <h2>Certifications</h2>
                 </div>
-                
+
                 <div class="carousel-wrapper">
                     <div class="carousel-container" id="certifications-carousel">
-                        </div>
+                    </div>
                     <div class="carousel-controls">
                         <button class="carousel-btn prev-btn" aria-label="Previous certification item">&lt;</button>
                         <button class="carousel-btn next-btn" aria-label="Next certification item">&gt;</button>
@@ -178,14 +244,16 @@ Turning imagination into systems that think, sense, and evolve...</p>
                 </div>
             </div>
         </section>
-        
+
+        <!-- HOBBIES MARQUEE -->
         <section class="hobbies" id="hobbies" aria-label="My Hobbies">
             <div class="hobbies-wrapper">
                 <div class="hobbies-track" id="hobbies-track">
-                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section class="contact" id="contact">
             <div class="container">
                 <div class="section-header">
@@ -198,10 +266,24 @@ Turning imagination into systems that think, sense, and evolve...</p>
                             I'm always open to discussing new projects, creative ideas, or opportunities
                             to be part of your visions.
                         </p>
-                        <ul class="contact-links">
-                            <li>Email: <a href="mailto:jc0589@srmist.edu.in">jc0589@srmist.edu.in</a></li>
-                            <li>LinkedIn: <a href="https://linkedin.com/in/your-profile-url" target="_blank" rel="noopener noreferrer">Chaitanya Vardhan</a></li>
-                            </ul>
+                        <div class="contact-social-buttons">
+                            <a href="https://github.com/chaitanya-vardhan" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="GitHub Profile">
+                                <span class="csb-icon">&lt;/&gt;</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/chaitanya-vardhan" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="LinkedIn Profile">
+                                <span class="csb-icon">in</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="./resume.pdf" download="Chaitanya_Vardhan_Resume.pdf" class="contact-social-btn" aria-label="Download Resume">
+                                <span class="csb-icon">CV</span>
+                                <span>Resume</span>
+                            </a>
+                            <a href="mailto:jc0589@srmist.edu.in" class="contact-social-btn" aria-label="Send Email">
+                                <span class="csb-icon">@</span>
+                                <span>Email</span>
+                            </a>
+                        </div>
                     </div>
                     <form class="contact-form" id="contact-form" novalidate>
                         <div class="form-group">
@@ -226,21 +308,23 @@ Turning imagination into systems that think, sense, and evolve...</p>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Chaitanya Vardhan | All Rights Reserved</p>
-            <p>Built with HTML · CSS · JavaScript · VT323</p>
+            <p>&copy; 2025 Chaitanya Vardhan | All Rights Reserved</p>
+            <p>Built with HTML &middot; CSS &middot; JavaScript &middot; VT323</p>
         </div>
     </footer>
-    
+
+    <!-- ==================== MODALS ==================== -->
     <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-container" id="modal-container">
             <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
             <div class="modal-content" id="modal-content">
-                </div>
+            </div>
         </div>
     </div>
-    
+
     <div class="modal-overlay friday-modal" id="friday-modal" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-container">
             <button class="modal-close-btn" id="friday-modal-close-btn" aria-label="Close F.R.I.D.A.Y. demo">&times;</button>
